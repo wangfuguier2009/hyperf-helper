@@ -1,0 +1,40 @@
+{
+  "name": "wangdeguier/hyperf-helper",
+  "description": "A helper component for hyperf.",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "hyperf",
+    "helper"
+  ],
+  "support": {
+  },
+  "require": {
+    "php": ">=7.3",
+    "hyperf/utils": "~2.1.0",
+    "hyperf/command": "~2.1.0",
+    "hyperf/contract": "~2.1.0",
+    "hyperf/di": "~2.1.0",
+    "hyperf/devtool": "~2.1.0",
+    "hyperf/session": "~2.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mzh\\Helper\\": "src/"
+    },
+    "files": [
+      "./src/Helper/helper.php"
+    ]
+  },
+  "extra": {
+    "hyperf": {
+      "config": "Mzh\\Helper\\ConfigProvider"
+    }
+  },
+  "bin": [
+  ],
+  "scripts": {
+    "cs-fix": "php-cs-fixer fix $1",
+    "test": "phpunit --colors=always"
+  }
+}
